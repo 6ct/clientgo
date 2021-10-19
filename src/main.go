@@ -12,7 +12,15 @@ func main() {
         w.SetTitle("Chief Client Go")
         w.SetSize(1280, 720, webview.HintNone)
         // fmt.Println(w.Window())
-        w.Init("window.open = (...args) => { window.location = args[0] }")
+        w.Init(`
+window.open = (...args) => {
+        window.location = args[0] 
+}
+
+let adBlockCSS = "#aHolder {display:none !important;}"
+
+document.documentElement.appendChild(document.createElement("style")).innerHTML = adBlockCSS
+`)
         w.Navigate(`data:text/html,<style>
         @font-face {
                 font-family: "GameFont";
@@ -20,9 +28,6 @@ func main() {
         }
         * {
                 font-family: GameFont;
-        }
-        aHolder {
-                display: none;
         }
         body {
                 background-color: #1c1c1c;
