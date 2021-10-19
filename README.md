@@ -4,6 +4,7 @@ Chief Client Go is a client for Mac and Linux written in GoLang
 
 ## Features
 - Ad Blocker
+- Option to use proxy
 
 ## Installation
 
