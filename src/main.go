@@ -17,7 +17,7 @@ window.open = (...args) => {
         window.location = args[0] 
 }
 
-let adBlockCSS = "#aHolder {display:none !important;}"
+let adBlockCSS = "#aHolder, .endAHolder, #adCon {display:none !important;}"
 
 document.documentElement.appendChild(document.createElement("style")).innerHTML = adBlockCSS
 `)
