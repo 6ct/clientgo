@@ -2,6 +2,15 @@
 
 Chief Client Go is a client for Mac and Linux written in GoLang
 
+## Archived
+
+This repository has been archived due to this client not approaching the goals of Chief Client++.
+
+- Many issues that other clients such as the Official Krunker Client suffer from are present in this due to little to no modification.
+- Features such as direct mouse input, scripts, and many more are missing.
+
+In the future, we look forward to porting Chief Client++ to all platforms without compromises.
+
 ## Features
 - Ad Blocker
 - Option to use proxy
